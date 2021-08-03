@@ -25,6 +25,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
@@ -45,18 +53,14 @@
                 />
               </div>
               <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
+                <input type="submit" value="Search" class="button" />
               </div>
             </div>
           </form>
           <div class="overview">
             <h1 id="city">Los Angeles</h1>
             <ul>
-              <li>Last update: <span id="date"></span></li>
+              <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -71,12 +75,12 @@
                 />
                 <div class="float-left">
                   <strong id="temperature"></strong
-                  ><span class="units"> °F</span>
+                  ><span class="units">°F</span>
                 </div>
               </div>
             </div>
             <div class="col-6">
-              <ul>
+              <ul class="hw">
                 <li>Humidity: <span id="humidity"> </span>%</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
               </ul>

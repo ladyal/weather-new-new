@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Overpass Mono", monospace;
 }
 
 h1 {
@@ -26,6 +26,31 @@ li {
   line-height: 19px;
 }
 
+.button {
+  width: 100%;
+  color: #000000;
+  background-color: #e3eefe;
+  border-color: white;
+  border-radius: 40px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: all 150ms ease-in-out;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -44,6 +69,7 @@ li {
 
 .weather-temperature img {
   margin-right: 5px;
+  margin-top: -15px;
 }
 
 .weather-temperature strong {
@@ -69,7 +95,7 @@ li {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
   color: black;
 }
@@ -79,10 +105,14 @@ li {
   opacity: 0.6;
 }
 
-.weather-forcast-temp {
+.weather-forcast-temp-max {
   font-size: 13px;
 }
 
 .weather-forcast-temp-min {
   opacity: 0.5;
+}
+
+.hw {
+  margin-left: 50px;
 }
